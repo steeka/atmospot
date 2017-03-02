@@ -1,10 +1,10 @@
 apply plugin: 'java'
 apply plugin: 'war'
 apply plugin: 'eclipse'
-apply plugin: 'jacoco'
-apply plugin: 'checkstyle'
-apply plugin: 'pmd'
-apply plugin: 'findbugs'
+//apply plugin: 'jacoco'
+//apply plugin: 'checkstyle'
+//apply plugin: 'pmd'
+//apply plugin: 'findbugs'
 
 repositories {
     mavenCentral()
@@ -16,12 +16,13 @@ dependencies {
     compile 'org.postgresql:postgresql:42.0.0'
    // compile 'javax.ejb:ejb:2.1'
     compile 'javax.ejb:ejb-api:3.0'
+compile group: 'commons-logging', name: 'commons-logging', version: '1.2'
     compile 'org.glassfish.jersey.containers:jersey-container-servlet:2.22.1'
 
     testCompile 'junit:junit:4.12'
     testCompile 'org.apache.httpcomponents:httpclient:4.5.2'
 }
-
+/*
 test {
     testLogging {
         showStandardStreams true
@@ -76,3 +77,4 @@ task dockerRemove {
         }
     }
 }
+*/

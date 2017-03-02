@@ -1,22 +1,16 @@
 <?xml version="1.0"?>
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
-<!-- Generated Mar 1, 2017 12:59:20 PM by Hibernate Tools 3.4.0.CR1 -->
+<!-- Generated Mar 1, 2017 5:19:29 PM by Hibernate Tools 3.4.0.CR1 -->
 <hibernate-mapping>
     <class name="com.steeka.atmospot.persistence.Temperature" table="temperature" schema="public">
-        <composite-id name="id" class="com.steeka.atmospot.persistence.TemperatureId">
-            <key-property name="city" type="string">
-                <column name="city" length="56" />
-            </key-property>
-            <key-property name="tempLow" type="short">
-                <column name="temp_low" />
-            </key-property>
-            <key-property name="tempHigh" type="short">
-                <column name="temp_high" />
-            </key-property>
-            <key-property name="date" type="date">
-                <column name="date" length="13" />
-            </key-property>
-        </composite-id>
+        <id name="tempId" type="long">
+            <column name="tempId" />
+            <generator class="assigned" />
+        </id>
+        <timestamp name="timestamp" column="timestamp" />
+        <property name="temp" type="short">
+            <column name="temp" not-null="true" />
+        </property>
     </class>
 </hibernate-mapping>

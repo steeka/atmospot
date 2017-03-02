@@ -1,6 +1,6 @@
 package com.steeka.atmospot.persistence;
 
-// Generated Mar 1, 2017 12:59:20 PM by Hibernate Tools 3.4.0.CR1
+// Generated Mar 1, 2017 5:19:29 PM by Hibernate Tools 3.4.0.CR1
 
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
@@ -55,7 +55,7 @@ public class TemperatureHome {
 		}
 	}
 
-	public Temperature findById(TemperatureId id) {
+	public Temperature findById(long id) {
 		log.debug("getting Temperature instance with id: " + id);
 		try {
 			Temperature instance = entityManager.find(Temperature.class, id);
