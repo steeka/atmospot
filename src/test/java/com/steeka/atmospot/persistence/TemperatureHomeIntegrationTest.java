@@ -1,14 +1,19 @@
 package com.steeka.atmospot.persistence;
 
-import static org.junit.Assert.*;
-import com.steeka.atmospot.persistence.Temperature;
-import com.steeka.atmospot.persistence.TemperatureHome;
 import java.util.Calendar;
 
 import org.junit.Test;
 
+import com.steeka.atmospot.persistence.Temperature;
+import com.steeka.atmospot.persistence.TemperatureHome;
+
+
 public class TemperatureHomeIntegrationTest {
 
+	protected void setUp() throws Exception {
+	  //  entityManagerFactory = Persistence.createEntityManagerFactory( "org.hibernate.tutorial.jpa" );
+	}
+	
 	@Test
 	public void test() {
 		java.util.Date date = Calendar.getInstance().getTime();

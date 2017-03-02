@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
-<!-- Generated Mar 1, 2017 5:19:29 PM by Hibernate Tools 3.4.0.CR1 -->
+<!-- Generated Mar 1, 2017 10:39:18 PM by Hibernate Tools 3.4.0.CR1 -->
 <hibernate-mapping>
     <class name="com.steeka.atmospot.persistence.Temperature" table="temperature" schema="public">
         <id name="tempId" type="long">

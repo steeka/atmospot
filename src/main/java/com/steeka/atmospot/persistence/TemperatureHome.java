@@ -1,6 +1,6 @@
 package com.steeka.atmospot.persistence;
 
-// Generated Mar 1, 2017 5:19:29 PM by Hibernate Tools 3.4.0.CR1
+// Generated Mar 1, 2017 10:40:13 PM by Hibernate Tools 3.4.0.CR1
 
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;

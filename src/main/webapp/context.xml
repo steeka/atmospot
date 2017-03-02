@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Context antiJARLocking="true" path="/">
+    <Resource
+            name="jdbc/Atmospot"
+            auth="Container"
+            type="javax.sql.DataSource"
+            username="admin**"
+            password="n*******"
+            driverClassName="org.postgresql.Driver"
+            url="dbc:postgresql://steeka.casffx8s1g3c.us-west-2.rds.amazonaws.com:5432/steeka11"
+            maxActive="8"
+            maxIdle="4"/>
+
+</Context>
+ 
