@@ -15,10 +15,9 @@ dependencies {
     compile 'org.hibernate:hibernate-core:3.6.7.Final'
     compile 'org.postgresql:postgresql:42.0.0'
     compile 'javax.ejb:ejb-api:3.0'
-    compile 'javax.servlet:servlet-api:3.0.1'
     compile group: 'commons-logging', name: 'commons-logging', version: '1.2'
     compile 'org.glassfish.jersey.containers:jersey-container-servlet:2.22.1'
-
+    compile group: 'javax.servlet', name: 'servlet-api', version: '2.5'
     testCompile 'junit:junit:4.12'
     testCompile 'org.apache.httpcomponents:httpclient:4.5.2'
 }
